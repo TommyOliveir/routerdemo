@@ -8,8 +8,8 @@ function UserFetchingDetails() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [user, setUser] = useState({});
-  const params = useParams();
-  const userId = params.userId;
+  const {userId} = useParams();
+ 
 
   useEffect(() => {
     axios
